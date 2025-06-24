@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(120deg, #ffffff, #cfcfcf);
+  color: #fff;
+  min-height: 100vh;
+  overflow: hidden; /* evita scroll */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+  box-sizing: border-box; /* asegúrate de que padding no cause desbordes */
+  text-align: center;
+  padding: 2rem;
+  background-color: rgb(0, 0, 0);
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgb(68, 68, 68);
+  width: 100%;
+  max-width: 600px;
+}
+
+
+.titulo {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+}
+
+.contenedor-input {
+  margin-bottom: 2rem;
+}
+
+input[type="date"],
+input[type="time"] {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background-color: #f0f0f0;
+  color: #000;
+  margin: 0 0.5rem;
+  /* opcional, para separarlos */
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="time"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+
+
+.reloj {
+  margin-bottom: 1rem;
+  font-family: monospace;
+  font-size: 1.4rem;
+  color: #bdc7c5;
+  background-color: #121212;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px #00ffc3;
+  transition: all 0.2s ease-in-out;
+}
+
+.reloj:hover {
+  transform: scale(1.02);
+  /* */
+  box-shadow: 0 0 15px #00ffc3;
+}
+
+.flip-clock-container {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  background-color: #000000;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 15px;
+}
+
+button:hover {
+  background-color: #fffafa;
+  color: #000000;
+  border: 2px solid #000000;
+}
+
+html, body {
+  overflow: hidden;
+}
+
+
+
+.app-footer {
+  margin-top: 2rem;
+  padding: 1rem;
+  text-align: center;
+  color: #fff;
+  background-color: #111;
+  border-top: 1px solid #333;
+  border-radius: 0 0 16px 16px;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.2);
+}
+
+.footer-links {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.footer-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #bbab00;
+}
